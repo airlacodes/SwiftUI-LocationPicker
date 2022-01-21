@@ -1,4 +1,4 @@
-# SwiftUI-LocationPicker
+# SwiftUI-LocationPicker [WIP / Sample]
 
 MapKit implementation of location picker using SwiftUI.
 
