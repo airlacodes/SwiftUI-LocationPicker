@@ -9,11 +9,21 @@ import Foundation
 import MapKit
 import UIKit
 import SwiftUI
+import Combine
 
 struct MapView: UIViewRepresentable {
 
-    @Binding var centerLocationDisplay: String
-    
+    @Binding var locationDisplayOutput: String
+    @Binding var searchedMapItem: MKMapItem? {
+        didSet {
+            if let searchedMapItem = searchedMapItem {
+                print("searched item: ", searchedMapItem)
+            }
+        }
+    }
+
+    let mapView = MKMapView()
+
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
@@ -28,7 +38,7 @@ struct MapView: UIViewRepresentable {
         func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {}
         
         func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
-            parent.centerLocationDisplay = "\(mapView.centerCoordinate)"
+            parent.locationDisplayOutput = "\(mapView.centerCoordinate)"
         }
 
         func mapView(_ mapView: MKMapView,
@@ -59,7 +69,6 @@ struct MapView: UIViewRepresentable {
         
         let region: MKCoordinateRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: -37.8136, longitude: 144.9631), span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
 
-        let mapView = MKMapView()
         mapView.delegate = context.coordinator
         mapView.region = region
         mapView.showsScale = true
@@ -77,5 +86,9 @@ struct MapView: UIViewRepresentable {
 
     func testFunc()  {
         print("Toggle Compass")
+    }
+    
+    func focusRegion(region: MKCoordinateRegion) {
+        mapView.setRegion(region, animated: true)
     }
 }
