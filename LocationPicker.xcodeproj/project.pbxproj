@@ -11,6 +11,10 @@
 		0983E58F279A04510060C296 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983E58E279A04510060C296 /* ContentView.swift */; };
 		0983E591279A04530060C296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0983E590279A04530060C296 /* Assets.xcassets */; };
 		0983E594279A04530060C296 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0983E593279A04530060C296 /* Preview Assets.xcassets */; };
+		0983E59B279A04700060C296 /* LocationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983E59A279A04700060C296 /* LocationPickerView.swift */; };
+		0983E59D279A17A00060C296 /* RepresentableMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983E59C279A17A00060C296 /* RepresentableMap.swift */; };
+		0983E59F279A23750060C296 /* LocationTextSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983E59E279A23750060C296 /* LocationTextSearchView.swift */; };
+		0983E5A1279A24BF0060C296 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983E5A0279A24BF0060C296 /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		0983E58E279A04510060C296 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0983E590279A04530060C296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0983E593279A04530060C296 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0983E59A279A04700060C296 /* LocationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerView.swift; sourceTree = "<group>"; };
+		0983E59C279A17A00060C296 /* RepresentableMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentableMap.swift; sourceTree = "<group>"; };
+		0983E59E279A23750060C296 /* LocationTextSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTextSearchView.swift; sourceTree = "<group>"; };
+		0983E5A0279A24BF0060C296 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				0983E58C279A04510060C296 /* LocationPickerApp.swift */,
 				0983E58E279A04510060C296 /* ContentView.swift */,
+				0983E59A279A04700060C296 /* LocationPickerView.swift */,
+				0983E59E279A23750060C296 /* LocationTextSearchView.swift */,
+				0983E5A0279A24BF0060C296 /* LocationService.swift */,
+				0983E59C279A17A00060C296 /* RepresentableMap.swift */,
 				0983E590279A04530060C296 /* Assets.xcassets */,
 				0983E592279A04530060C296 /* Preview Content */,
 			);
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0983E59F279A23750060C296 /* LocationTextSearchView.swift in Sources */,
 				0983E58F279A04510060C296 /* ContentView.swift in Sources */,
+				0983E59B279A04700060C296 /* LocationPickerView.swift in Sources */,
 				0983E58D279A04510060C296 /* LocationPickerApp.swift in Sources */,
+				0983E5A1279A24BF0060C296 /* LocationService.swift in Sources */,
+				0983E59D279A17A00060C296 /* RepresentableMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
